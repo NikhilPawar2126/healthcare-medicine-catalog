@@ -30,7 +30,7 @@ A comprehensive healthcare medicine catalog application built with Next.js, Type
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/NikhilPawar2126/healthcare-medicine-catalog.git
    ```
 
 2. Navigate to the project directory:
@@ -77,6 +77,46 @@ To learn more about the technologies used in this project:
 
 ## Deployment
 
+### Deploying with Vercel (Recommended)
+
 The easiest way to deploy your Next.js app is to use [Vercel](https://vercel.com/), the platform created by the makers of Next.js.
+
+1. Sign up for a [Vercel account](https://vercel.com/signup) if you don't have one
+2. Install the Vercel CLI: `npm install -g vercel`
+3. Navigate to your project directory
+4. Run `vercel` and follow the prompts:
+   ```bash
+   vercel
+   ```
+5. For subsequent deployments, use:
+   ```bash
+   vercel --prod
+   ```
+
+### Deploying with GitHub Pages
+
+Alternatively, you can deploy to GitHub Pages:
+
+1. Install the gh-pages package:
+   ```bash
+   pnpm add -D gh-pages
+   ```
+
+2. Add these scripts to your `package.json`:
+   ```json
+   "scripts": {
+     "dev": "next dev",
+     "build": "next build",
+     "start": "next start",
+     "lint": "eslint .",
+     "export": "next export",
+     "deploy": "next build && next export && gh-pages -d out"
+   }
+   ```
+
+3. Deploy with:
+   ```bash
+   pnpm deploy
+   ```
 
 Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
