@@ -19,6 +19,14 @@ A comprehensive healthcare medicine catalog application built with Next.js, Type
 - [Shadcn/ui](https://ui.shadcn.com/)
 - [Lucide React Icons](https://lucide.dev/)
 
+## Documentation
+
+For detailed information about setting up, deploying, and contributing to this project, please refer to the following guides:
+
+- [Setup Guide](SETUP.md) - Complete instructions for setting up the project locally
+- [Deployment Guide](DEPLOYMENT-GUIDE.md) - Detailed deployment instructions for various platforms
+- [Git Guide](GIT-GUIDE.md) - Git workflow and best practices for this project
+
 ## Getting Started
 
 ### Prerequisites
